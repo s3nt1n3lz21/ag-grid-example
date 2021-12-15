@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import "ag-grid-community/src/styles/ag-grid.scss";
+@import "ag-grid-community/src/styles/ag-theme-alpine/sass/ag-theme-alpine-mixin.scss";
+
+.ag-theme-alpine {
+    @include ag-theme-alpine((
+        odd-row-background-color: #49acd6,
+        header-background-color: #25c053,
+        row-hover-color: #b9e714,
+    ));
+}
